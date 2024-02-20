@@ -15,3 +15,9 @@
 
 ### Скриншоты, демонстрирующие работу программы:
 <img width = "800" src="https://github.com/gurusooo/Matrix-Calculator-including-complex-numbers-/blob/main/data/1413.png">
+<img width = "800" src="https://github.com/gurusooo/Matrix-Calculator-including-complex-numbers-/blob/main/data/1414.png">
+<img width = "800" src="https://github.com/gurusooo/Matrix-Calculator-including-complex-numbers-/blob/main/data/1415.png">
+<img width = "800" src="https://github.com/gurusooo/Matrix-Calculator-including-complex-numbers-/blob/main/data/1416.png">
+<img width = "800" src="https://github.com/gurusooo/Matrix-Calculator-including-complex-numbers-/blob/main/data/1417.png">
+<img width = "800" src="https://github.com/gurusooo/Matrix-Calculator-including-complex-numbers-/blob/main/data/1418.png">
+<img width = "800" src="https://github.com/gurusooo/Matrix-Calculator-including-complex-numbers-/blob/main/data/1419.png">
