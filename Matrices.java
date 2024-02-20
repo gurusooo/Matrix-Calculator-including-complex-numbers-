@@ -11,6 +11,7 @@ class Matrices
         this.data = new Complex_nums[rows][cols];
     }
 
+
     public Matrices madd (Matrices second)
     {
         if (this.rows != second.rows || this.cols != second.cols)
@@ -32,7 +33,7 @@ class Matrices
     {
         if (this.cols != second.rows)
         {
-            throw new IllegalArgumentException("");
+            throw new IllegalArgumentException("Number of columns in first matrix and number of rows in second one should be the same!");
         }
         Matrices res = new Matrices(this.rows, second.cols);
         for (int i = 0; i < this.rows; i++)
@@ -67,10 +68,26 @@ class Matrices
     {
         if (this.rows != this.cols)
         {
-            throw new IllegalArgumentException("Matrix must be square to find determinant.");
+            throw new IllegalArgumentException("Matrix must be square to find determinant!");
         }
+        return determt_srch(this.data);
     }
 
+    public double determt_srch(Complex_nums[][] matrix)
+    {
+        int size = matrix.length;
+        if (size==0)
+        {
+            return matrix[0][0].real;
+        }
+        double det = 0;
+        int pm = 1;
+        for (int i = 0; i < size; i++)
+        {
+            pm *= -1;
+        }
+        return det;
+    }
     public void print() {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
