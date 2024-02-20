@@ -11,7 +11,23 @@ class Matrices
         this.data = new Complex_nums[rows][cols];
     }
 
-    public Matrices add (Matrices second)
+    public Matrices minorcount (Matrices matrix, int row, int col)
+    {
+        int size = matrix.rows;
+        Matrices minor = new Matrices(size - 1, size - 1);
+        for (int i = 0, k = 0; i < size; i++) {
+            if (i == row) continue;
+            for (int j = 0, l = 0; j < size; j++) {
+                if (j == col) continue;
+                minor.data[k][l] = matrix.data[i][j];
+                l++;
+            }
+            k++;
+        }
+        return minor;
+    }
+
+    public Matrices madd (Matrices second)
     {
         if (this.rows != second.rows || this.cols != second.cols)
         {
@@ -28,16 +44,16 @@ class Matrices
         return res;
     }
 
-    public Matrices multiply (Matrices second)
+    public Matrices mmultiply (Matrices second)
     {
         if (this.cols != second.rows)
         {
             throw new IllegalArgumentException("");
         }
         Matrices res = new Matrices(this.rows, second.cols);
-        for (int i = 0; i < rows; i++)
+        for (int i = 0; i < this.rows; i++)
         {
-            for (int j = 0; j < cols; j++)
+            for (int j = 0; j < second.cols; j++)
             {
                 Complex_nums sum = new Complex_nums(0,0);
                 for (int k = 0; k < this.cols; k++)
@@ -65,7 +81,11 @@ class Matrices
 
     public double determt()
     {
-
+        if (this.rows != this.cols)
+        {
+            throw new IllegalArgumentException("Matrix must be square to find determinant.");
+        }
+        return minorcount().determt(this);
     }
 
     public void print() {
