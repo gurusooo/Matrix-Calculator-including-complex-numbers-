@@ -21,3 +21,4 @@
 <img width = "800" src="https://github.com/gurusooo/Matrix-Calculator-including-complex-numbers-/blob/main/data/1417.png">
 <img width = "800" src="https://github.com/gurusooo/Matrix-Calculator-including-complex-numbers-/blob/main/data/1418.png">
 <img width = "800" src="https://github.com/gurusooo/Matrix-Calculator-including-complex-numbers-/blob/main/data/1419.png">
+На последнем скриншоте было изменено расстояние между элементами в строчке для лучшей читаемости.
