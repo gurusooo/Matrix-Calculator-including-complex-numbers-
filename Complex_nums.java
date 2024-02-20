@@ -34,8 +34,8 @@ class Complex_nums
     }
     public Complex_nums multiply (Complex_nums second)
     {
-        double realpart = this.real * second.real- this.im * second.im;
-        double impart = this.real * second.im- this.im * second.real;
+        double realpart = this.real * second.real - this.im * second.im;
+        double impart = this.real * second.im + this.im * second.real;
         return new Complex_nums(realpart, impart);
     }
     public Complex_nums divide (Complex_nums second)
