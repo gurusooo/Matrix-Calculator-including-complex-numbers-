@@ -6,17 +6,28 @@ public class Main
     {
         Scanner scan = new Scanner(System.in);
         System.out.println("Hi! It's a matrix calculator, to set numbers use the code segment below, please;)   this work is completed by M Shkuleva, SE");
-        Matrices matrix1 = new Matrices(2, 2);
+        Matrices matrix1 = new Matrices(3, 3);
         matrix1.data[0][0] = new Complex_nums(1, 2);
         matrix1.data[0][1] = new Complex_nums(3, 4);
-        matrix1.data[1][0] = new Complex_nums(5, 6);
-        matrix1.data[1][1] = new Complex_nums(7, 8);
+        matrix1.data[0][2] = new Complex_nums(5, 6);
+        matrix1.data[1][0] = new Complex_nums(7, 8);
+        matrix1.data[1][1] = new Complex_nums(9, 10);
+        matrix1.data[1][2] = new Complex_nums(11, 12);
+        matrix1.data[2][0] = new Complex_nums(13, 14);
+        matrix1.data[2][1] = new Complex_nums(15, 16);
+        matrix1.data[2][2] = new Complex_nums(17, 18);
 
-        Matrices matrix2 = new Matrices(2, 2);
-        matrix2.data[0][0] = new Complex_nums(1, 1);
-        matrix2.data[0][1] = new Complex_nums(1, 1);
+        Matrices matrix2 = new Matrices(3, 3);
+        matrix2.data[0][0] = new Complex_nums(1, 2);
+        matrix2.data[0][1] = new Complex_nums(5, 90);
+        matrix2.data[0][2] = new Complex_nums(99, 21);
         matrix2.data[1][0] = new Complex_nums(1, 1);
-        matrix2.data[1][1] = new Complex_nums(1, 1);
+        matrix2.data[1][1] = new Complex_nums(-13, 8);
+        matrix2.data[1][2] = new Complex_nums(500, 2);
+        matrix2.data[2][0] = new Complex_nums(55, 133);
+        matrix2.data[2][1] = new Complex_nums(1, -1);
+        matrix2.data[2][2] = new Complex_nums(0, 0);
+
 
         System.out.println("\nFirst matrix: ");
         matrix1.print();
@@ -29,7 +40,7 @@ public class Main
             System.out.println("Press 1 to add matrix 1 and matrix 2: ");
             System.out.println("      2 to multiply matrix 1 and matrix 2: ");
             System.out.println("      3 to transpose matrix 1");
-            System.out.println("      4 to find determinant of matrix 1");
+            System.out.println("      4 to find determinant of matrix 1 (CURRENTLTY IN DEVELOPMENT");
             System.out.println("      5 to exit");
             int key = scan.nextInt();
 
@@ -50,6 +61,12 @@ public class Main
                     matrix1.transpose().print();
                     break;
 
+                /**case 4:
+                    System.out.println("Here is determinant for matrix 1!");
+                    double det = matrix1.determt();
+                    System.out.println(det);
+                    break;**/
+
                 case 5:
                     System.out.println("Have a good day!");
                     return;
@@ -57,8 +74,6 @@ public class Main
                 default:
                     System.out.println("Invalid choice!");
             }
-
-
         }
     }
 }
