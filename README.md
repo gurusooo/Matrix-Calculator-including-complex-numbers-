@@ -13,3 +13,5 @@
 * mmultiply
 * transpose
 
+### Скриншоты, демонстрирующие работу программы:
+<img width = "800" src="https://github.com/gurusooo/Matrix-Calculator-including-complex-numbers-/blob/main/data/1413.png">
